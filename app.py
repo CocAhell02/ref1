@@ -1,4 +1,4 @@
-import asyncio
+7import asyncio
 import logging
 import requests
 import re
@@ -787,7 +787,7 @@ async def ayehshshsg(m: types.Message):
 async def ayehshshsg(m: types.Message):
     admin_kb = types.InlineKeyboardMarkup()
     admin_kb.add(types.InlineKeyboardButton(text='Рассылка 📣', callback_data='rass'))
-	admin_kb.add(InlineKeyboardButton(text='Управление юзером 🧑‍💻', callback_data='panel'))
+    admin_kb.add(InlineKeyboardButton(text='Управление юзером 🧑‍💻', callback_data='panel'))
     await m.answer(f'<b>В боте: {len(sql.get_all_data())} пользователей</b>', reply_markup=admin_kb)
 
 msgs = {}
